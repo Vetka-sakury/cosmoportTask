@@ -1,7 +1,5 @@
 package com.space.model;
 
-
-
 import javax.persistence.*;
 
 @MappedSuperclass
@@ -10,12 +8,12 @@ import javax.persistence.*;
 public class ShipEntity {
 
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false, updatable = false)
     protected Long id;
 
     public ShipEntity(Long id) {
-        this.id=id;
+        this.id = id;
     }
 
     public ShipEntity() {
